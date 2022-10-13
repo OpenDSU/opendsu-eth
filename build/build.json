@@ -1,0 +1,14 @@
+{
+    "opendsuethbrowser": {
+        "deps": "../../../opendsu-eth:opendsueth",
+        "autoLoad": true,
+        "bundleExternal": true,
+        "bare": false
+    },
+    "opendsuethnode": {
+        "deps": "../../../opendsu-eth:opendsueth",
+        "autoLoad": true,
+        "bundleExternal": true,
+        "bare": true
+    }
+}

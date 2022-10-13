@@ -1,0 +1,19 @@
+{
+  "name": "opendsu-eth",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node ./node_modules/octopus/scripts/run build devmode"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OpenDSU/opendsu-eth.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "ethers": "^5.7.1",
+    "octopus": "git+http://github.com/privatesky/octopus.git"
+  }
+}
