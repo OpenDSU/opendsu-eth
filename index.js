@@ -59,8 +59,19 @@ class OpenDSUEth {
         const receipt = await transaction.wait();
         return receipt;
     }
-}
 
+    async transferGas(keySSI, receiver, amount, unitOrDigits) {
+        const signer = new ethers.Wallet(keySSI, this.provider);
+        const transferTransaction = {
+            to: receiver,
+            value: ethers.utils.parseEther(String(amount), unitOrDigits),
+        };
+
+        const transaction = await signer.sendTransaction(transferTransaction);
+        const receipt = await transaction.wait();
+        return receipt;
+    }
+}
 
 function createStrategyFactory(config) {
     return new OpenDSUEth(config);

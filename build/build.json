@@ -9,6 +9,6 @@
         "deps": "../../../opendsu-eth:opendsueth",
         "autoLoad": true,
         "bundleExternal": true,
-        "bare": true
+        "node": true
     }
 }
